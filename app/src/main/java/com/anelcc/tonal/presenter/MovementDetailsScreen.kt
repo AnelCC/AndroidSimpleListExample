@@ -15,12 +15,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import com.anelcc.tonal.ui.theme.TonalIntervioewTheme
 
 
 @Composable
-fun MovementDetailsScreen(viewModel: MovementViewModel) {
+fun MovementDetailsScreen(viewModel: MovementViewModel = hiltViewModel<MovementViewModel>()) {
     val selectedItem by viewModel.selectedItem.collectAsState()
 
     Column(modifier = Modifier.padding(top = 56.dp).fillMaxSize()) {
@@ -32,7 +33,6 @@ fun MovementDetailsScreen(viewModel: MovementViewModel) {
                 .size(240.dp),
             model = "${selectedItem?.url}",
             contentDescription = "${ selectedItem?.name}",
-            onLoading = { /* Show loading spinner */ },
         )
     }
 }
@@ -42,6 +42,6 @@ fun MovementDetailsScreen(viewModel: MovementViewModel) {
 @Composable
 fun MovementDetailsPreview() {
     TonalIntervioewTheme {
-        MovementDetailsScreen(MovementViewModel())
+        MovementDetailsScreen()
     }
 }

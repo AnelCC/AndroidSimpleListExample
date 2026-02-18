@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Bench Press",
+    "url": "https://tonal.com/cdn/shop/files/paul_3770x_2_screen.webp?v=1741275088&width=768",
+    "description": "Upper-body exercise that uses the chest, shoulders and triceps."
+  },
+  {
+    "id": "2",
+    "name": "Goblet Squat",
+    "url": "https://tonal.com/cdn/shop/files/paul_3383x_2_screen.webp?v=1741288691&width=768",
+    "description": "Lower-body that involves legs, glutes and core."
+  },
+  {
+    "id": "3",
+    "name": "Biceps Curl",
+    "url": "https://tonal.com/cdn/shop/files/jarod_4109x_2_screen.webp?v=1741275614&width=768",
+    "description": "Upper-body exercise that lifts weight through elbow flexion."
+  },
+  {
+    "id": "4",
+    "name": "Rotational Chop",
+    "url": "https://tonal.com/cdn/shop/files/kelly_6315x_2_screen.jpg?v=1741291777&width=768",
+    "description": "Core-strengthening exercise that trains the abdominals and obliques."
+  }
+]
