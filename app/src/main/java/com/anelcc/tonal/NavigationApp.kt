@@ -22,7 +22,9 @@ fun NavigationApp() {
             }
         }
         composable("details") {
-            MovementDetailsScreen(viewModel)
+            MovementDetailsScreen(viewModel){
+                navController.popBackStack()
+            }
         }
     }
 }
